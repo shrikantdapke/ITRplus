@@ -1,0 +1,99 @@
+.itr-estimator {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.itr-estimator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.itr-estimator label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.itr-estimator input,
+.itr-estimator select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.itr-estimator button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.itr-estimator button:hover {
+  background-color: #1b5e20;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+  text-align: center;
+}
+.itr-estimator {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.itr-estimator label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.itr-estimator input,
+.itr-estimator select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.itr-estimator button {
+  padding: 10px 16px;
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.itr-estimator button:hover {
+  background-color: #1976d2;
+}
+
+.result {
+  background-color: #e8f5e9;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+}

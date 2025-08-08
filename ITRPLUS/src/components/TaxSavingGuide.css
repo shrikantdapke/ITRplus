@@ -1,0 +1,78 @@
+.tax-guide {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tax-guide h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.investment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.investment-table th,
+.investment-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.investment-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.tag-80c {
+  background-color: #007bff;
+}
+
+.tag-80d {
+  background-color: #28a745;
+}
+
+.tag-other {
+  background-color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .investment-table th,
+  .investment-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .tax-guide h2 {
+    font-size: 1.4rem;
+  }
+}

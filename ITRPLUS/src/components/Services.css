@@ -1,0 +1,234 @@
+/* Root Services Section */
+.tax-services {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(to bottom right, #f7f9fc, #eef3f8);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e2a36;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Card Styling */
+.service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem;
+  max-width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle at center, rgba(0, 123, 255, 0.04), transparent);
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 123, 255, 0.15);
+}
+
+/* Icon */
+.service-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1.2rem;
+  z-index: 1;
+}
+
+/* Title */
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1d2b53;
+  margin-bottom: 0.6rem;
+  z-index: 1;
+}
+
+/* Description */
+.service-description {
+  font-size: 1rem;
+  color: #5f6c7b;
+  line-height: 1.6;
+  z-index: 1;
+}
+
+/* Mobile-Friendly Typography */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-title {
+    font-size: 1.15rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .service-icon {
+    font-size: 2.2rem;
+  }
+}
+/* Root Services Section */
+.tax-services {
+  padding: 4rem 1rem 6rem;
+  background: linear-gradient(135deg, #f9fbfd, #e8eff6);
+  text-align: center;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+}
+
+/* Title */
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  color: #1e2a36;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card Styling */
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.4rem 2rem;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.05), transparent 70%);
+  transform: rotate(20deg);
+  z-index: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 45px rgba(0, 123, 255, 0.2);
+}
+
+/* Icon */
+.service-icon {
+  font-size: 2.7rem;
+  color: #007bff;
+  margin-bottom: 1.4rem;
+  z-index: 1;
+}
+
+/* Title */
+.service-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1d2b53;
+  margin-bottom: 0.6rem;
+  z-index: 1;
+}
+
+/* Description */
+.service-description {
+  font-size: 1rem;
+  color: #5f6c7b;
+  line-height: 1.65;
+  z-index: 1;
+}
+
+/* Mobile-Friendly Typography */
+@media (max-width: 768px) {
+  .tax-services {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .service-icon {
+    font-size: 2.3rem;
+  }
+
+  .services-grid {
+    gap: 2rem;
+  }
+
+  .service-card {
+    align-items: center;
+    text-align: center;
+  }
+}

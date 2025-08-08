@@ -1,0 +1,319 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eef2f6, #d9e4ec); /* Soft gradient for background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.profile-container h1 {
+    font-size: 32px;
+    color: #2c3e50; /* Darker shade for the heading */
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.profile-container p {
+    font-size: 16px;
+    color: #7f8c8d; /* Soft gray for text */
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+/* Input Fields */
+.profile-container input[type="text"], 
+.profile-container input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9fb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container input[type="text"]:focus, 
+.profile-container input[type="file"]:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+.profile-container button {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.profile-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #1d78c1; /* Darker blue on hover */
+}
+
+.profile-container button:active {
+    transform: scale(0.97);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .profile-container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    .profile-container h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .profile-container p {
+        font-size: 14px;
+    }
+
+    .profile-container button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .profile-container p {
+        font-size: 13px;
+    }
+
+    .profile-container button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db; /* Blue top spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Test Results Table */
+.test-results {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+}
+
+.test-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden; /* Keep table content within bounds */
+}
+
+.test-results th, 
+.test-results td {
+    padding: 12px 16px; /* Increase padding for better readability */
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.test-results th {
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient background for headers */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: sticky; /* Fix header for better navigation */
+    top: 0;
+    z-index: 1;
+}
+
+.test-results td {
+    background-color: #f9f9fb;
+}
+
+.test-results tr:nth-child(even) td {
+    background-color: #f3f6f8;
+}
+
+.test-results tr:hover td {
+    background-color: #eef2f6;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .test-results table {
+        font-size: 12px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .test-results th, 
+    .test-results td {
+        padding: 10px;
+    }
+}
+
+/* Table Scroll Shadow for Modern Effect */
+.test-results {
+    position: relative;
+}
+
+.test-results::before,
+.test-results::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    pointer-events: none;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo-container {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.save-button,
+.edit-button,
+.logout-button,
+.change-password-button,
+.delete-account-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+}
+
+.test-results {
+    margin-top: 20px;
+}
+
+.test-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.test-results th,
+.test-results td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.profile-footer {
+    margin-top: 30px;
+}
+
+.profile-footer p {
+    margin-top: 10px;
+}
+
+.profile-footer button {
+    margin: 10px;
+}

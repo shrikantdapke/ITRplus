@@ -1,0 +1,219 @@
+.goal-tracker {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .goal-tracker h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .goal-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .goal-form input {
+    flex: 1 1 200px;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .goal-form button {
+    padding: 0.6rem 1.2rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .goal-form button:hover {
+    background-color: #219150;
+  }
+  
+  .goal-list,
+  .goal-completed {
+    margin-bottom: 2rem;
+  }
+  
+  .goal-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .goal-item:hover {
+    transform: translateY(-2px);
+  }
+  
+  .goal-item h4 {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .goal-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar-container {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.5rem 0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    transition: width 0.4s ease;
+    border-radius: 1rem;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .goal-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .goal-actions input {
+    width: 100px;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+  }
+  
+  .goal-actions button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .goal-actions button:hover {
+    background-color: #2471a3;
+  }
+  
+  .completed-section h3 {
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  .goal-tracking-service {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .goal-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .goal-form input,
+  .goal-form button {
+    padding: 0.6rem;
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .goal-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    flex: 1 1 100px;
+    transition: background 0.3s;
+  }
+  .goal-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .goals-list,
+  .completed-goals {
+    margin-top: 2rem;
+  }
+  
+  .goal-card {
+    background: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .goal-card.completed {
+    border-left-color: #28a745;
+    background: #eaffea;
+  }
+  
+  .goal-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .goal-actions input {
+    flex: 2;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .goal-actions button {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    transition: background 0.3s;
+  }
+  .goal-actions button:hover {
+    background: #218838;
+  }
+  
+  .goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .deadline {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  

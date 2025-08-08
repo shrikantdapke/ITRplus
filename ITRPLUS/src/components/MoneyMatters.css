@@ -1,0 +1,99 @@
+.money-matters {
+    padding: 50px 20px;
+    font-family: "Segoe UI", sans-serif;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  .money-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .money-header h1 {
+    font-size: 2.6rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .money-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .explore-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .resources-section {
+    margin-top: 40px;
+  }
+  
+  .resources-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+  }
+  
+  .resource-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resource-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .resource-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .resource-link {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+  
+  .arrow-icon {
+    margin-left: 6px;
+  }
+  

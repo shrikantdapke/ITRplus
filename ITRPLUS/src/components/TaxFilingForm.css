@@ -1,0 +1,137 @@
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff, #f0f8ff); /* White to very light blue gradient */
+    border-radius: 16px;
+    color: #333; /* Neutral gray for text */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out; /* Smooth fade-in effect */
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Form Title */
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003366; /* Deep blue */
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #003366; /* Deep blue */
+    letter-spacing: 0.5px;
+  }
+  
+  /* Inputs and Select */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #fdfdfd; /* Light neutral background */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Focus Style */
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #0066cc; /* Vibrant blue */
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.3); /* Subtle blue glow */
+  }
+  
+  /* File Input */
+  .form-group input[type="file"] {
+    background: #f9f9f9; /* Light background */
+    color: #333; /* Neutral text */
+    padding: 0.6rem;
+    border: 2px dashed #0066cc; /* Modern dashed border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .form-group input[type="file"]:hover {
+    background: #eef6ff; /* Light blue hover */
+    border-color: #003366; /* Deep blue */
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0066cc, #003366); /* Gradient blue */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #003366, #001a33); /* Darker gradient */
+    transform: scale(1.05); /* Zoom effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+  
+    .form-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 0.7rem 0.9rem;
+    }
+  }
+  
+  /* Accessibility Improvements */
+  .form-group input:focus-visible,
+  .form-group select:focus-visible {
+    outline: 2px solid #0066cc;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+  }
+  
+  .submit-btn:focus-visible {
+    outline: 2px dashed #ffffff;
+    background: linear-gradient(135deg, #004080, #001f40); /* Accessible contrast */
+  }
+  
